@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1</title>
+    <style>
+    
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+        .c-pill{
+            padding: 10px 20px;
+            font-size: 25px;
+            font-family: 'Noto Sans', sans-serif;
+            border: 2px solid transparent;
+            border-radius: 20px;
+        }
+
+        .c-pill.primary {
+            background-color: #6495ED;
+            color: #ffffff;
+        }
+        .c-pill.secondary {
+            background-color: #6A89A7;
+            color: #ffffff;
+        }
+        .c-pill.disabled {
+            background-color: #222622;
+            color: #777;
+        }
+        .c-pill.error {
+            background-color: #CE2029;
+            color: #ffffff;
+        }
+        
+        .c-pill.error:focus{
+            animation: flash 0.5s 6;
+        
+        }
+
+        @keyframes flash {
+            50% {opacity: 0;}
+        }
+
+    </style>
+</head>
+<body>
+
+    
+   <h2>This is the Primary button</h2>
+   <button class="c-pill primary">Primary</button>
+
+   <h2>This is the Secondary button</h2>
+   <button class="c-pill secondary">Secondary</button>
+
+   <h2>this is the Disabled button</h2>
+   <button class="c-pill disabled">Disabled</button>
+
+   <h2>This is the Error button</h2>
+   <button class="c-pill error">Error</button>
+    
+</body>
+</html>
